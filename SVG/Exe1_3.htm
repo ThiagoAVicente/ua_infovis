@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+
+    <svg width="420" height="350" font-family="Verdana">
+        <title> Exercise 1.3 </title>
+        <desc> Is to graphic what html is to text </desc>
+        <path id="heart" d="M 210 80 C 180 20, 60 30, 60 120 C 60 190, 150 240, 210 300
+            C 270 240, 360 190, 360 120 C 360 30, 240 20, 210 80 Z" fill="red" />
+        <text x="210" y="180" font-size="60" fill="white" text-anchor="middle">SVG
+            <animate attributeName="font-size" values="60;80;60" dur="1s" begin="click; heart.click"
+                repeatCount="indefinite" />
+        </text>
+        <defs>
+            <path id="arc" d="M 35 160 A 175 175 0 0 0 385 160" />
+        </defs>
+        <text font-size="22" text-anchor="middle">
+            <textPath href="#arc" startOffset="50%">is to graphic WHAT HTML is to text</textPath>
+        </text>
+    </svg>
+
+</body>
+
+</html>
